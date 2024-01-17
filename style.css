@@ -16,7 +16,6 @@
     text-align: center;
     font-size: 1rem;
     font-weight: 700;
-    padding: 20px;
 }
 
 .travel-title-primary {
@@ -34,13 +33,11 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 nav .travel-logo {
     display: flex;
-    align-items: center;
     gap: 16px;
 }
 
@@ -124,10 +121,7 @@ select {
     border: 0;
 }
 
-.btn-primary img {
-    width: 16px;
-    height: 16px;
-}
+
 
 /* popular tours section styles */
 .popular-tours {
@@ -345,13 +339,121 @@ h3 {
     background: rgba(233, 68, 68, 0.05);
 }
 
-.hide {
-    display: none;
+.video-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.video-text p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 90%;
+    margin: 24px 0;
+}
+
+.video-text ul {
+    padding-left: 16px;
+}
+
+.video-text li {
+    width: 85%;
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+.video-text button {
+    margin-top: 16px;
+}
+
+/* newsletter section styles */
+.newsletter-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.newsletter-form {
+    width: 474px;
+    height: 450px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-form {
+    padding: 40px 40px;
+}
+
+.newsletter-form h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.newsletter-form p {
+    width: 350px;
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.newsletter-form input {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+    margin-top: 16px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+}
+
+.newsletter-img {
+    width: 65%;
+}
+
+.newsletter-img img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.discount {
+    text-align: center;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    position: relative;
+    bottom: 205px;
+    left: 298px;
+    padding: 30px;
+}
+
+.discount p {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.discount h3 {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+
 }
 
 /* Responsive mobile */
 
 @media screen and (max-width:600px) {
+
+    /* header section styles */
     nav div>ul {
         display: none;
     }
@@ -388,10 +490,16 @@ h3 {
         width: 100%;
     }
 
+    .banner .travel-input button {
+        width: 100%;
+    }
+
+    /* popular tours section styles */
     .popular-tours {
         flex-direction: column;
         justify-content: center;
         padding: 0 20px;
+        margin-top: 50px;
     }
 
     .travel-title-primary {
@@ -416,6 +524,7 @@ h3 {
         max-width: 100%;
     }
 
+    /* destination section styles */
     .destination-img-box-1,
     .destination-img-box-2,
     .destination-img-box-3 {
@@ -428,6 +537,7 @@ h3 {
         color: #131318;
         font-size: 1.25rem;
         font-weight: 800;
+        margin-top: 50px;
     }
 
     .destination-text p {
@@ -449,19 +559,85 @@ h3 {
         margin: 0 auto;
     }
 
+    /* choose us section styles */
+    .choose-us-text {
+        margin-top: 50px;
+    }
+
     .choose-us-text p {
         width: 309px;
         margin: 0 auto;
     }
-    .choose-us-box{
+
+    .choose-us-box {
         display: flex;
         flex-direction: column;
-        
+
     }
+
     .choose-us-card,
     .choose-us-card-blue,
-    .choose-us-card-red{
+    .choose-us-card-red {
         width: 90%;
         margin: 0 auto;
+    }
+
+    /* video section style */
+    .video-section {
+        flex-direction: column;
+        padding: 25px 25px;
+        gap: 16px;
+        margin-top: 40px;
+    }
+
+    .video-text {}
+
+    .video iframe {
+        width: 335px;
+        height: 200px;
+    }
+
+    /* newsletter section styles */
+    .newsletter-section {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .newsletter-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .newsletter-img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .newsletter-img .discount {
+        width: 214.023px;
+        height: 79.268px;
+        position: relative;
+        left: 125px;
+        bottom: 150px;
+        padding: 20px;
+    }
+
+    .discount p {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .discount h3 {
+        font-size: 1.30rem;
+        font-weight: 800;
     }
 }
