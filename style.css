@@ -338,7 +338,7 @@ h3 {
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
-
+/* video section styles */
 .video-section {
     display: flex;
     justify-content: space-around;
@@ -422,7 +422,7 @@ h3 {
     width: 100%;
     border-radius: 16px;
 }
-
+/* discount section styles */
 .discount {
     text-align: center;
     width: 324px;
@@ -447,7 +447,7 @@ h3 {
     font-size: 2rem;
     font-weight: 800;
 }
-
+/* footer section styles */
 footer {
     max-width: 100%;
     height: 502px;
