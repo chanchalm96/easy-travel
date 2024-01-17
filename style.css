@@ -446,8 +446,51 @@ h3 {
     color: #FFF;
     font-size: 2rem;
     font-weight: 800;
-
 }
+
+footer {
+    max-width: 100%;
+    height: 502px;
+    background: rgba(19, 19, 24, 0.05);
+    margin: 0 auto;
+    padding-top: 110px;
+    text-align: center;
+}
+
+.footer-text .travel-logo {
+    display: inline-flex;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.footer-text h2 {
+    color: var(--Dark-01, #131318);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.footer-text p {
+    width: 769px;
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+.footer-icon{
+    display: flex;
+    justify-content:center;
+    width: 872px;
+    margin: 32px auto;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+.footer-text .travel-text {
+    color: #FF5400;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 
 /* Responsive mobile */
 
@@ -639,5 +682,17 @@ h3 {
     .discount h3 {
         font-size: 1.30rem;
         font-weight: 800;
+    }
+    /* footer section styles */
+    footer{
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .footer-text p{
+        width: 90%;
+    }
+    .footer-icon{
+        width: 90%;
     }
 }
